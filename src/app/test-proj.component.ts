@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {SaveAs} from 'filesaverjs';
 
 @Component({
   moduleId: module.id,
