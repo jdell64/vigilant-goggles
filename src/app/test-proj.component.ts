@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {SaveAs} from 'filesaverjs';
+import filesaver = require('filesaver');
 
 @Component({
   moduleId: module.id,
@@ -9,4 +9,8 @@ import {SaveAs} from 'filesaverjs';
 })
 export class TestProjAppComponent {
   title = 'test-proj works!';
+
+  saveTest(): void {
+    filesaver.saveAs(new Blob([]), "test.txt");
+  }
 }

@@ -3,13 +3,16 @@
  **********************************************************************************************/
 /** Map relative paths to URLs. */
 const map: any = {
-	'filesaverjs': 'vendor/filesaver.js',
+	'filesaver': 'vendor/filesaver.js',
 };
-
 
 /** User packages configuration. */
 const packages: any = {
-	'filesaverjs': {defaultExtension: 'js', main: 'FileSaver'},
+	'filesaver': {
+    defaultExtension: 'js',
+    main: 'FileSaver.js',
+    format: 'cjs'
+  }
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
